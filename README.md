@@ -7,9 +7,9 @@ This Power BI dashboard analyzes bank transaction data to reveal patterns in tra
 ## 📌 Project Statement
 Transaction systems rely on network capacity to operate efficiently. Without clear insight into how transactions are distributed across bandwidth levels, organisations risk inefficient resource allocation, performance bottlenecks, or unnecessary infrastructure costs. This analysis set out to answer the following questions:
 
-How are transactions distributed across different bandwidth ranges?
-Are higher-value or higher-volume transactions concentrated in specific bandwidth tiers?
-Can bandwidth grouping reveal patterns that support capacity planning and operational monitoring?
+1. How are transactions distributed across different bandwidth ranges?
+2. Are higher-value or higher-volume transactions concentrated in specific bandwidth tiers?
+3. Can bandwidth grouping reveal patterns that support capacity planning and operational monitoring?
 
 ## 📌 Dataset Overview
 Each record in the dataset captures: a unique Transaction ID that identifies each individual transaction, the Transaction Amount representing the monetary value processed, and the Slice Bandwidth measured in Mbps, which indicates the network bandwidth consumed during processing.
