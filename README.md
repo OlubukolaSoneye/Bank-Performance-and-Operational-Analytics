@@ -36,19 +36,24 @@ Total Transactions = DISTINCTCOUNT('bank transaction_data'[Transaction ID])
 Bandwidth Group = SWITCH ( TRUE(), [Slice Bandwidth (Mbps)] >= 50 && [Slice Bandwidth (Mbps)] < 100, "50–100 Mbps", [Slice Bandwidth (Mbps)] >= 100 && [Slice Bandwidth (Mbps)] < 150, "100–150 Mbps", [Slice Bandwidth (Mbps)] >= 150 && [Slice Bandwidth (Mbps)] <= 250, "150–250 Mbps", "Out of Range" )
 ```
 
-<p align="center">
-  <img src="Screenshot 2026-02-21 at 12.17.55.png"450"/>
-</p>
+## 🛠️ Tools Used
+Power BI for data modelling, visualisation, and dashboard development
+DAX for calculated measures and bandwidth grouping
 
-## 📌 Multicollonearity
-The scatter plot reveals that the variables Departure_Delay and Arrival_Delay are highly correlated.
-<p align="center">
-  <img src="Screenshot 2026-02-21 at 12.18.06.png"450"/>
-</p>
+## 📌 Dashboard Design and Exploration
+The dashboard is structured to move from high-level performance metrics to more detailed analysis. Summary KPIs provide immediate visibility into transaction volume and value, while bandwidth group visuals highlight how activity is distributed across network capacity tiers. Interactive filters allow users to drill into specific transaction segments and explore patterns in more detail.
 
-Data Modelling was done using Logistic Regression models and Decision tree models, Here is the result of the best performing model
+## 📌 Key Insights
+The dashboard shows 1,000 transactions with a total value of approximately £771K. Transaction outcomes are almost evenly split, with 513 failed and 487 successful transactions, highlighting potential reliability issues within the transaction process. Transaction activity is most concentrated in the 150–250 Mbps bandwidth group, which records the highest volume of transactions. Lower bandwidth ranges handle fewer transactions, indicating that higher network capacity supports the bulk of processing. Transaction types are evenly distributed, with Transfers (37.4%), Deposits (31.6%), and Withdrawals (31%), suggesting no single transaction type disproportionately drives system load. Fraud-flagged transactions account for just over half of total activity (51.9%) and are again most concentrated in the 150–250 Mbps bandwidth tier, reinforcing the link between higher bandwidth usage and increased risk. Transaction and fraud activity are primarily concentrated in North America and Europe.
 
-From the models created, the most optimal model from the project is the DT-Entropy-Multiway Split, with a ROC Index of 0.98, indicating how well it can distinguish between classes. The most likely positive instances are efficiently targeted by attaining a high Cumulative Lift 3. Its low false negative rate of 54 and somewhat low false positive rate of 167 make it reliable for use in decision-making.
+## 📌 Business Value
+The concentration of activity and fraud in the 150–250 Mbps range highlights this tier as a priority for capacity planning, monitoring, and optimisation. The high proportion of failed transactions indicates areas where performance improvements could significantly increase system reliability. By linking transaction value, bandwidth usage, and fraud indicators, the dashboard supports targeted risk monitoring and more efficient allocation of infrastructure resources. 
+
+## 📌 Conclusion
+This project demonstrates how combining transaction metrics with bandwidth analysis can reveal where system demand and risk are highest. The Power BI dashboard provides a clear, practical view of transaction performance, supporting better operational monitoring and informed decisions around network capacity and fraud control.
+
+Interact with the dashboard - https://app.powerbi.com/groups/me/reports/2e0b58a6-e735-4c45-92f4-31a6c571e1d5/d74678b5934723b76859?experience=power-bi
+
 <p align="center">
   <img src="Screenshot 2026-02-21 at 12.18.18.png"450"/>
 </p>
