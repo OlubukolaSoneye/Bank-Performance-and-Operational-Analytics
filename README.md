@@ -1,19 +1,6 @@
 # Bank-Performance-and-Operational-Analytics
 The Performance Analytics dashboard analyses bank transaction data using Power BI to understand transaction volume, value, and system performance. It highlights how transactions are distributed across network bandwidth tiers and regions. 
 
-<p align="center">
-  <img src="Screenshot 2026-02-21 at 13.15.28.png"450"/>
-</p>
-
-<p align="center">
-  <img src="Screenshot 2026-02-21 at 13.15.37.png"450"/>
-</p>
-
-<p align="center">
-  <img src="Screenshot 2026-02-21 at 13.15.45.png"450"/>
-</p>
-
-
 ## 📌 Project Overview
 This Power BI dashboard analyzes bank transaction data to reveal patterns in transaction volumes, monetary values, and performance across network bandwidth tiers. Built using DAX measures and interactive visualizations, it enables stakeholders to make data-driven decisions about transaction infrastructure and resource allocation.
 
@@ -66,3 +53,16 @@ The concentration of activity and fraud in the 150–250 Mbps range highlights t
 This project demonstrates how combining transaction metrics with bandwidth analysis can reveal where system demand and risk are highest. The Power BI dashboard provides a clear, practical view of transaction performance, supporting better operational monitoring and informed decisions around network capacity and fraud control.
 
 Interact with the dashboard - https://app.powerbi.com/groups/me/reports/2e0b58a6-e735-4c45-92f4-31a6c571e1d5/d74678b5934723b76859?experience=power-bi
+
+
+<p align="center">
+  <img src="Screenshot 2026-02-21 at 13.15.28.png"250"/>
+</p>
+
+<p align="center">
+  <img src="Screenshot 2026-02-21 at 13.15.37.png"250"/>
+</p>
+
+<p align="center">
+  <img src="Screenshot 2026-02-21 at 13.15.45.png"250"/>
+</p>
